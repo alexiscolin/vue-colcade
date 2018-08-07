@@ -41,6 +41,7 @@ That grid is accessible between all components by using the new global `$colcade
 In order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
 
 Then if you need update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
+
 All native colcade methods are accessibles :
 
 ``` javascript
