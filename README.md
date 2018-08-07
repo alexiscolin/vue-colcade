@@ -37,9 +37,10 @@ In your Vue.js components, to create a new grid, simply use:
 ```
 
 That grid is accessible between all components by using the new global `$colcade` vue property. So you can create as many grid as you want, storing them by their `name`.
-So, you can destroy a grid by calling `this.$colcade.destroy('myGridName')`.
 
-All native colcade methods are accessible :
+In order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
+
+All native colcade methods are accessibles :
 
 ``` javascript
   this.$colcade.myGridName.append();
@@ -47,4 +48,5 @@ All native colcade methods are accessible :
 ```
 
 By Alexis Colin, thanks to Colcade by David DeSandro
+
 MIT License. Have at it.
