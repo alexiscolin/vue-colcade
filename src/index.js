@@ -5,9 +5,14 @@ const ColcadeWrapper = function(obj) {
 
   this.init = () => { this.colc = this.createGrid(); };
 	this.createGrid = () => new Colcade(this.data.el, this.data.config);
-	this.destroyGrid = () => this.colc.destroy();
   this.apprendGrid = item => this.colc.append(item);
   this.prependGrid = item => this.colc.prepend(item);
+  this.destroyGrid = () => new Promise((resolve, reject) => {
+    this.colc.destroy();
+    this.colc = null;
+    delete this.colc;
+    resolve();
+  });
 
   this.init();
 };
@@ -25,7 +30,16 @@ ColcadeFactory.prototype = {
     } else {
       throw `${name} is not a property of $colcade`;
     }
-  }
+  },
+	update: function $update(name, config) {
+		if (this.hasOwnProperty(name)) {
+    	this[name].destroyGrid().then(() => {
+        this[name].init();
+      })
+    } else {
+      throw `${name} is not a property of $colcade`;
+    }
+	},
 };
 
 const VueColcade = {
