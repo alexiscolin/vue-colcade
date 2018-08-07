@@ -1,0 +1,12 @@
+{
+  "name": "vue-colcade",
+  "version": "1.0.0",
+  "description": "Vue.js 2 plugin around Colcade",
+  "main": "index.js",
+  "author": "Alexis Colin",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "colcade": "^0.2.0"
+  }
+}
