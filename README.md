@@ -2,7 +2,7 @@
 
 A small wrapper for integrating [Colcade](https://github.com/desandro/colcade) to Vuejs.
 
-Vue.js plugin accessible globally from any component to run multiple colcade grid instances. This plugin lets you interact with different grid throughout different components.
+Vue.js plugin accessible globally from any component to run multiple colcade grid instances. This plugin lets you interact with differents grids throughout differents components.
 
 ## Install
 
