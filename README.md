@@ -1,4 +1,4 @@
-# Vue Colcade
+# 📐 Vue Colcade
 
 A small wrapper for integrating [Colcade](https://github.com/desandro/colcade) to Vuejs.
 
