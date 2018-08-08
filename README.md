@@ -1,8 +1,12 @@
 # 📐 Vue Colcade
 
+*Lightweight masonry layout*
+
+---
+
 A small wrapper for integrating [Colcade](https://github.com/desandro/colcade) to Vuejs.
 
-Vue.js plugin accessible globally from any component to run multiple colcade grid instances. This plugin lets you interact with differents grids throughout differents components.
+Vue.js plugin accessible globally from any component to run multiple colcade grid instances. Let's interact with differents grids throughout differents components. This plugin needs you to use the basic [Colcade configuration usage](https://github.com/desandro/colcade#usage).
 
 ## Install
 
