@@ -42,11 +42,11 @@ That grid is accessible across all components by using the new global vue proper
 
 *vue-colcade* offers following methods:
 
-* `create` - `this.$colcade.create({})` - create a new instance of Colcade grid
-* `destroy` - `this.$colcade.destroy('myGridName')` - destroy an instance of Colcade grid
-* `update` - `this.$colcade.update('myGridName')` - update grid items (after changing order, removing items...)
-* `append` - `this.$colcade.myGridName.append(items)` - add items to the end of layout
-* `prepend` - `this.$colcade.myGridName.prepend(items)` - Add items to the beginning of layout
+* **create** - `this.$colcade.create({})` - create a new instance of Colcade grid
+* **destroy** - `this.$colcade.destroy('myGridName')` - destroy an instance of Colcade grid
+* **update** - `this.$colcade.update('myGridName')` - update grid items (after changing order, removing items...)
+* **append** - `this.$colcade.myGridName.append(items)` - add items to the end of layout
+* **prepend** - `this.$colcade.myGridName.prepend(items)` - Add items to the beginning of layout
 
 As exemple, in order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
 
