@@ -1,12 +1,16 @@
 # 📐 Vue Colcade
 
-*Lightweight masonry layout*
+*Lightweight masonry layout thanks to Vuejs*
 
----
-
+![David](https://img.shields.io/david/alexiscolin/vue-colcade.svg)
+  
 A small wrapper for integrating [Colcade](https://github.com/desandro/colcade) to Vuejs.
 
 Vue.js plugin accessible globally from any component to run multiple colcade grid instances. Let's interact with differents grids throughout differents components. This plugin needs you to use the basic [Colcade configuration usage](https://github.com/desandro/colcade#usage).
+
+<br><br>
+<p align="center"><img src="http://files.de-jaune-et-de-bleu.com/img/github/vue-colcade.png" width="100%"></p>
+<br>
 
 ## Install
 
@@ -65,5 +69,7 @@ And, all native colcade methods are still accessibles :
 ```
 
 By Alexis Colin, thanks to [Colcade](https://github.com/desandro/colcade) by David DeSandro
+
+### Licence
 
 MIT License.
