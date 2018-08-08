@@ -38,7 +38,7 @@ In your Vue.js components, to create a new grid, simply use:
 
 That grid is accessible across all components by using the new global vue property: `$colcade`. So you can create as many grids as you want, referencing them by their `name`.Every future modifications thanks to vue-colcade must referred the `name` of the instance in order to affect it.
 
-### Methodes
+### Methods
 
 *vue-colcade* offers following methods:
 
