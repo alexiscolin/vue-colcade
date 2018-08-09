@@ -50,15 +50,15 @@ That grid is accessible across all components by using the new global vue proper
 
 *vue-colcade* offers following methods:
 
-* **create** - `this.$colcade.create({})` - create a new instance of Colcade grid -> see usage above
-* **destroy** - `this.$colcade.destroy('myGridName')` - destroy an instance of Colcade grid
-* **update** - `this.$colcade.update('myGridName')` - update grid items (after changing order, removing items...)
-* **append** - `this.$colcade.myGridName.append(items)` - add items to the end of layout
+* **create** - `this.$colcade.create({})` - Create a new instance of Colcade grid -> see usage above
+* **destroy** - `this.$colcade.destroy('myGridName')` - Destroy an instance of Colcade grid
+* **update** - `this.$colcade.update('myGridName')` - Update grid items (after changing order, removing items...)
+* **append** - `this.$colcade.myGridName.append(items)` - Add items to the end of layout
 * **prepend** - `this.$colcade.myGridName.prepend(items)` - Add items to the beginning of layout
 
 As exemple, in order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
 
-Then, if you need to update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
+Then, if you need to update items values inside a colcade grid, you may call the following property in order to force Colcade to refresh itself: `this.$colcade.update('myGridName')`.
 
 And, all native colcade methods are still accessibles :
 
