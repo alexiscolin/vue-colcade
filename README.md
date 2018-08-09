@@ -58,7 +58,7 @@ That grid is accessible across all components by using the new global vue proper
 
 As exemple, in order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
 
-Then if you need update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
+Then, if you need to update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
 
 And, all native colcade methods are still accessibles :
 
