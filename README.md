@@ -36,7 +36,7 @@ In your Vue.js components, to create a new grid, simply use:
 
   this.$colcade.create({
       name: 'myGridName',  // name of colcade instance -> will be used as a reference for grid instance
-      el: myGridElement,  // element that host the grid -> as mentioned in Colcade config
+      el: myGridElement,  // element that hosts the grid -> as mentioned in Colcade config
       config: {  // native Colcade configuration -> as mentioned in Colcade config
         columns: '.grid-col',
         items: '.grid-item',
@@ -44,13 +44,13 @@ In your Vue.js components, to create a new grid, simply use:
     });
 ```
 
-That grid is accessible across all components by using the new global vue property: `$colcade`. So you can create as many grids as you want, referencing them by their `name`.Every future modifications thanks to vue-colcade must referred the `name` of the instance in order to affect it.
+That grid is accessible across all components by using the new global vue property: `$colcade`. So you can create as many grids as you want, referencing them by their `name`. Every future modifications thanks to vue-colcade must referred the `name` of the instance in order to affect it.
 
 ### Methods
 
 *vue-colcade* offers following methods:
 
-* **create** - `this.$colcade.create({})` - create a new instance of Colcade grid
+* **create** - `this.$colcade.create({})` - create a new instance of Colcade grid -> see usage above
 * **destroy** - `this.$colcade.destroy('myGridName')` - destroy an instance of Colcade grid
 * **update** - `this.$colcade.update('myGridName')` - update grid items (after changing order, removing items...)
 * **append** - `this.$colcade.myGridName.append(items)` - add items to the end of layout
@@ -58,7 +58,7 @@ That grid is accessible across all components by using the new global vue proper
 
 As exemple, in order to destroy a grid, just call: `this.$colcade.destroy('myGridName')`.
 
-Then if you need update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
+Then, if you need to update items values inside a colcade grid, you may call the following property in order to force colcade to refresh itself: `this.$colcade.update('myGridName')`.
 
 And, all native colcade methods are still accessibles :
 
