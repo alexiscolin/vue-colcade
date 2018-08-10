@@ -1,13 +1,13 @@
 import Colcade from 'colcade';
 
-const ColcadeWrapper = function(obj) {
-	this.data = obj;
+const ColcadeWrapper = function $ColcadeWrapper(obj) {
+  this.data = obj;
 
   this.init = () => { this.colc = this.createGrid(); };
-	this.createGrid = () => new Colcade(this.data.el, this.data.config);
+  this.createGrid = () => new Colcade(this.data.el, this.data.config);
   this.apprendGrid = item => this.colc.append(item);
   this.prependGrid = item => this.colc.prepend(item);
-  this.destroyGrid = () => new Promise((resolve, reject) => {
+  this.destroyGrid = () => new Promise((resolve) => {
     this.colc.destroy();
     this.colc = null;
     delete this.colc;
@@ -17,29 +17,29 @@ const ColcadeWrapper = function(obj) {
   this.init();
 };
 
-const ColcadeFactory = function(){};
+const ColcadeFactory = function $ColcadeFactory() {};
 ColcadeFactory.prototype = {
-	create: function $create(obj){
+  create: function $create(obj) {
     this[obj.name] = !this[obj.name] && new ColcadeWrapper(obj);
   },
-  destroy: function $destroy(name){
-  	if (this.hasOwnProperty(name)) {
-    	this[name].destroyGrid();
+  destroy: function $destroy(name) {
+    if (Object.prototype.hasOwnProperty.call(this, name)) {
+      this[name].destroyGrid();
       this[name] = null;
-    	delete this[name];
+      delete this[name];
     } else {
-      throw `${name} is not a property of $colcade`;
+      throw new Error(`${name} is not a property of $colcade`);
     }
   },
-	update: function $update(name, config) {
-		if (this.hasOwnProperty(name)) {
-    	this[name].destroyGrid().then(() => {
+  update: function $update(name) {
+    if (Object.prototype.hasOwnProperty.call(this, name)) {
+      this[name].destroyGrid().then(() => {
         this[name].init();
-      })
+      });
     } else {
-      throw `${name} is not a property of $colcade`;
+      throw new Error(`${name} is not a property of $colcade`);
     }
-	},
+  },
 };
 
 const VueColcade = {
