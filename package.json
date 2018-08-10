@@ -6,10 +6,7 @@
   "author": "Alexis Colin",
   "license": "MIT",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexiscolin/vue-colcade.git"
-  },
+  "repository": "git+https://github.com/alexiscolin/vue-colcade.git",
   "keywords": [
     "vue",
     "colcade",
