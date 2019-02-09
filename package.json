@@ -1,6 +1,6 @@
 {
   "name": "vue-colcade",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Vue.js 2 plugin around Colcade",
   "main": "dist/vue-colcade.min.js",
   "author": "Alexis Colin",
