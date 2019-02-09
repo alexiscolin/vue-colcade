@@ -30,9 +30,10 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-rename": "^1.4.0",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "lodash": "^4.17.11"
   }
 }
