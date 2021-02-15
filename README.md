@@ -36,15 +36,16 @@ Import vue-colcade.js in the main project file
 In your Vue.js components, to create a new grid, simply use:
 
 ``` javascript
-
-  this.$colcade.create({
+mounted: function mounted() {
+   this.$colcade.create({
       name: 'myGridName',  // name of colcade instance -> will be used as a reference for grid instance
       el: myGridElement,  // element that hosts the grid -> as mentioned in Colcade config
       config: {  // native Colcade configuration -> as mentioned in Colcade config
         columns: '.grid-col',
         items: '.grid-item',
       },
-    });
+   });
+}
 ```
 
 That grid is accessible across all components by using the new global vue property: `$colcade`. So you can create as many grids as you want, referencing them by their `name`. Every future modifications thanks to vue-colcade must referred the `name` of the instance in order to affect it. As an exemple, if you create an instance with `myGridName` as name, you can update it with the following method: `this.$colcade.update('myGridName')`.
