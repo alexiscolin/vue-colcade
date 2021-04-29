@@ -12,7 +12,7 @@ A small wrapper for integrating [Colcade](https://github.com/desandro/colcade) t
 Vue.js plugin accessible globally from any component to run multiple colcade grid instances. Let's interact with differents grids throughout differents components. This plugin needs you to use the basic [Colcade configuration usage](https://github.com/desandro/colcade#usage).
 
 <br><br>
-<p align="center"><img src="http://files.de-jaune-et-de-bleu.com/img/github/vue-colcade-3.png" width="100%"></p>
+<p align="center"><img src="http://files.jaunebleu.co/img/github/vue-colcade-3.png" width="100%"></p>
 <br>
 
 ## Install
